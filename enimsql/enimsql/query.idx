@@ -1,0 +1,38 @@
+EQ	enimsql/query.html#EQ	Comparators.EQ	
+GT	enimsql/query.html#GT	Comparators.GT	
+LT	enimsql/query.html#LT	Comparators.LT	
+GTE	enimsql/query.html#GTE	Comparators.GTE	
+LTE	enimsql/query.html#LTE	Comparators.LTE	
+NEQ	enimsql/query.html#NEQ	Comparators.NEQ	
+BETWEEN	enimsql/query.html#BETWEEN	Comparators.BETWEEN	
+LIKE	enimsql/query.html#LIKE	Comparators.LIKE	
+IN	enimsql/query.html#IN	Comparators.IN	
+Comparators	enimsql/query.html#Comparators	query: Comparators	
+AND	enimsql/query.html#AND	Conditionals.AND	
+OR	enimsql/query.html#OR	Conditionals.OR	
+NOT	enimsql/query.html#NOT	Conditionals.NOT	
+Conditionals	enimsql/query.html#Conditionals	query: Conditionals	
+ASC	enimsql/query.html#ASC	Order.ASC	
+DESC	enimsql/query.html#DESC	Order.DESC	
+Order	enimsql/query.html#Order	query: Order	
+KeyOperatorValue	enimsql/query.html#KeyOperatorValue	query: KeyOperatorValue	
+KeyValueTuple	enimsql/query.html#KeyValueTuple	query: KeyValueTuple	
+AbstractModel	enimsql/query.html#AbstractModel	query: AbstractModel	
+Model	enimsql/query.html#Model	query: Model	
+a%	enimsql/query.html#a%.t,string	query: a%(str: string): untyped	
+`%a`	enimsql/query.html#%a.t,string	query: `%a`(str: string): untyped	
+`%a%`	enimsql/query.html#%a%.t,string	query: `%a%`(str: string): untyped	
+`-a%`	enimsql/query.html#-a%.t,string	query: `-a%`(str: string): untyped	
+a%b	enimsql/query.html#a%b.t,string,string	query: a%b(startStr, endStr: string): untyped	
+select	enimsql/query.html#select,typedesc[ref.M],varargs[string]	query: select[M](model: typedesc[ref M]; columns: varargs[string]): ref M	
+update	enimsql/query.html#update,typedesc[ref.M],varargs[KeyValueTuple]	query: update[M](model: typedesc[ref M]; cols: varargs[KeyValueTuple]): ref M	
+updateAll	enimsql/query.html#updateAll,typedesc[ref.M],varargs[KeyValueTuple]	query: updateAll[M](model: typedesc[ref M]; cols: varargs[KeyValueTuple]): ref M	
+delete	enimsql/query.html#delete,typedesc[ref.M]	query: delete[M](model: typedesc[ref M]): ref M	
+where	enimsql/query.html#where,ref.M,varargs[KeyOperatorValue]	query: where[M](model: ref M; filters: varargs[KeyOperatorValue]): ref M	
+whereIn	enimsql/query.html#whereIn,ref.M,string,openArray[string]	query: whereIn[M](model: ref M; column: string; values: openArray[string]): ref M	
+whereNotIn	enimsql/query.html#whereNotIn,ref.M,string,openArray[string]	query: whereNotIn[M](model: ref M; column: string; values: openArray[string]): ref M	
+whereLike	enimsql/query.html#whereLike,ref.M,string,string	query: whereLike[M](model: ref M; column: string; valueLike: string): ref M	
+increment	enimsql/query.html#increment,typedesc[ref.M],string,int	query: increment[M](model: typedesc[ref M]; column: string; offset = 1): ref M	
+decrement	enimsql/query.html#decrement,typedesc[ref.M],string,int	query: decrement[M](model: typedesc[ref M]; column: string; offset = 1): ref M	
+exec	enimsql/query.html#exec,ref.M	query: exec[M](model: ref M): string	
+model	enimsql/query.html#model.m,staticstring,untyped	query: model(modelId: static string; fields: untyped)	
