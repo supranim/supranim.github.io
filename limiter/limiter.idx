@@ -1,0 +1,7 @@
+RateLimiter	limiter.html#RateLimiter	limiter: RateLimiter	
+getId	limiter.html#getId,L,string,string	limiter: getId[L: Limiter](limiter: L; area, key: string): string	
+hit	limiter.html#hit,L,string	limiter: hit[L: Limiter](limiter: var L; keyId: string)	
+getHits	limiter.html#getHits,L,string	limiter: getHits[L: Limiter](limiter: var L; keyId: string): int	
+reset	limiter.html#reset,L,string	limiter: reset[L: Limiter](limiter: var L; keyId: string)	
+availableIn	limiter.html#availableIn,L,string	limiter: availableIn[L: Limiter](limiter: var L; keyId: string): Duration	
+attempt	limiter.html#attempt,L,string,int,CallbackLimiter,TimeInterval	limiter: attempt[L: Limiter](limiter: var L; key: string; maxAttempts: int;\n                    callback: CallbackLimiter;\n                    timeToWait: TimeInterval = 1.minutes)	
