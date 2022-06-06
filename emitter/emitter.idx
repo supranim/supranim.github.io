@@ -1,0 +1,11 @@
+Anytime	emitter.html#Anytime	RunType.Anytime	
+Once	emitter.html#Once	RunType.Once	
+RunType	emitter.html#RunType	emitter: RunType	
+Arg	emitter.html#Arg	emitter: Arg	
+Callback	emitter.html#Callback	emitter: Callback	
+Listener	emitter.html#Listener	emitter: Listener	
+Event	emitter.html#Event	emitter: Event	
+newArg	emitter.html#newArg.t,auto	emitter: newArg(argValue: auto): untyped	
+listen	emitter.html#listen.t,E,string,Callback	emitter: listen[E: EventEmitter](emitter: var E; key: string; handler: Callback): untyped	
+listenOnce	emitter.html#listenOnce.t,E,string,Callback	emitter: listenOnce[E: EventEmitter](emitter: var E; key: string; handler: Callback): untyped	
+emit	emitter.html#emit.t,E,string,varargs[Arg]	emitter: emit[E: EventEmitter](emitter: var E; eventId: string; args: varargs[Arg] = @[]): untyped	
